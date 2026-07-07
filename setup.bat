@@ -236,6 +236,14 @@ if not exist backend\app\api\routes\home.py (
     type nul > backend\app\api\routes\home.py
 )
 
+if not exist backend\app\api\routes\upload.py (
+    type nul > backend\app\api\routes\upload.py
+)
+
+if not exist backend\app\services\upload_service.py (
+    type nul > backend\app\services\upload_service.py
+)
+
 :: =====================================================
 :: ARQUIVOS DO FRONTEND
 :: =====================================================
