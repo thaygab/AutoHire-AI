@@ -84,3 +84,47 @@ O `setup.bat` passou a ser reutilizável, permitindo sua execução diversas vez
 
 Automatizar a criação do ambiente virtual Python.
 
+# Diário de Desenvolvimento
+
+---
+
+# Data 07/07
+
+---
+
+# Funcionalidade
+
+## Upload de Currículo
+
+---
+
+## Objetivo
+
+Implementar a primeira funcionalidade completa do AutoHire AI.
+
+O objetivo desta etapa foi permitir que a aplicação recebesse um currículo enviado pelo usuário e o armazenasse na pasta `uploads`.
+
+---
+
+## O que foi desenvolvido
+
+- Estrutura da rota de upload.
+- Criação do serviço de upload.
+- Recebimento de arquivos utilizando FastAPI.
+- Salvamento do currículo na pasta `uploads`.
+- Organização da arquitetura em camadas (Router → Service).
+
+---
+
+## Problemas encontrados
+
+### Biblioteca `python-multipart`
+
+O FastAPI apresentou erro ao receber arquivos.
+
+**Solução**
+
+Instalação da biblioteca:
+
+```bash
+pip install python-multipart

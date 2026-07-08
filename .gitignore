@@ -50,3 +50,11 @@ Thumbs.db
 
 frontend/node_modules/
 frontend/dist/
+
+# =====================================================
+# ARQUIVOS GERADOS PELA APLICAÇÃO
+# =====================================================
+
+# Uploads de usuários
+backend/uploads/*
+!backend/uploads/.gitkeep

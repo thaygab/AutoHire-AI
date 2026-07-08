@@ -200,8 +200,36 @@ if not exist docs\documentacao\05-padroes-do-projeto.md (
     type nul > docs\documentacao\05-padroes-do-projeto.md
 )
 
+if not exist docs\documentacao\06-fluxo-do-sistema.md (
+    type nul > docs\documentacao\06-fluxo-do-sistema.md
+)
+
+if not exist docs\documentacao\07-fluxo-de-desenvolvimento.md (
+    type nul > docs\documentacao\07-fluxo-de-desenvolvimento.md
+)
+
+if not exist docs\documentacao\08-comandos-uteis.md (
+    type nul > docs\documentacao\08-comandos-uteis.md
+)
+
 if not exist docs\documentacao\glossario.md (
     type nul > docs\documentacao\glossario.md
+)
+
+if not exist docs\documentacao\10-manual-do-desenvolvedor.md (
+    type nul > docs\documentacao\10-manual-do-desenvolvedor.md
+)
+
+if not exist docs\documentacao\11-solucao-de-problemas.md (
+    type nul > docs\documentacao\11-solucao-de-problemas.md
+)
+
+if not exist docs\documentacao\12-ambiente-de-desenvolvimento.md (
+    type nul > docs\documentacao\12-guia-do-vscode.md
+)
+
+if not exist docs\documentacao\13-guia-git.md (
+    type nul > docs\documentacao\13-guia-git.md
 )
 
 :: =====================================================

@@ -1,3 +1,4 @@
+from fastapi import HTTPException
 from pathlib import Path
 import shutil
 
@@ -16,6 +17,13 @@ def salvar_curriculo(arquivo):
     Retorno:
         dict: Mensagem indicando o resultado do salvamento.
     """
+
+  # Verifica se o arquivo enviado é um PDF
+    if arquivo.content_type != "application/pdf":
+        raise HTTPException(
+            status_code=400,
+            detail="Apenas arquivos PDF são permitidos."
+    )
 
     # Garante que a pasta de uploads exista
     PASTA_UPLOADS.mkdir(exist_ok=True)
