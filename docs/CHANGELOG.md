@@ -33,3 +33,17 @@ Exemplos:
 Código HTTP utilizado quando o cliente envia uma requisição inválida.
 
 No AutoHire AI é utilizado quando o usuário tenta enviar um arquivo diferente de PDF.
+
+## [09/07/2026]
+
+### Adicionado
+- Implementado o serviço `pdf_service.py` para leitura de arquivos PDF.
+- Adicionada a biblioteca PyMuPDF para extração de texto.
+- Criado script de teste para validar a leitura de PDFs.
+- Criada estrutura inicial para testes do backend.
+
+### Alterado
+- Aprimorado o `setup.bat` com criação automática da estrutura de testes.
+- Automatizada a criação dos arquivos `__init__.py`.
+- Revisada a arquitetura do projeto.
+- Atualizado o `.gitignore`.

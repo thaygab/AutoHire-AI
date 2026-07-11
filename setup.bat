@@ -28,13 +28,6 @@ if not exist docs (
     mkdir docs
 )
 
-if not exist database (
-    mkdir database
-)
-
-if not exist uploads (
-    mkdir uploads
-)
 
 if not exist reports (
     mkdir reports
@@ -270,6 +263,38 @@ if not exist backend\app\api\routes\upload.py (
 
 if not exist backend\app\services\upload_service.py (
     type nul > backend\app\services\upload_service.py
+)
+
+if not exist backend\app\services\pdf_service.py (
+    type nul > backend\app\services\pdf_service.py
+)
+
+if not exist backend\uploads (
+    mkdir backend\uploads
+)
+
+if not exist backend\uploads\.gitkeep (
+    type nul > backend\uploads\.gitkeep
+)
+
+if not exist backend\testar_pdf.py (
+    type nul > backend\testar_pdf.py
+)
+
+if not exist backend\tests\test_pdf.py (
+    type nul > backend\tests\test_pdf.py
+)
+
+if not exist backend\tests\test_upload.py (
+    type nul > backend\tests\test_upload.py
+)
+
+if not exist backend\app\__init__.py (
+    type nul > backend\app\__init__.py
+)
+
+if not exist backend\app\services\__init__.py (
+    type nul > backend\app\services\__init__.py
 )
 
 :: =====================================================

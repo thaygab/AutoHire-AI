@@ -128,3 +128,44 @@ Instalação da biblioteca:
 
 ```bash
 pip install python-multipart
+
+---
+
+## 09/07/2026 — Implementação da leitura de PDFs
+
+Implementar a leitura do conteúdo de arquivos PDF enviados pelos usuários e revisar a arquitetura do projeto antes de iniciar a integração com Inteligência Artificial.
+
+
+## Atividades realizadas
+- Instalação da biblioteca PyMuPDF.
+- Criação do serviço `pdf_service.py`.
+- Implementação da função `ler_pdf()`.
+- Validação da leitura de arquivos PDF.
+- Criação da estrutura inicial de testes.
+- Atualização do `setup.bat`.
+- Revisão da arquitetura do projeto.
+- Organização das pastas.
+- Atualização do `.gitignore`.
+- Remoção de estruturas duplicadas.
+
+## Problemas encontrados
+- Erro de importação durante os testes com pytest.
+- Dificuldades relacionadas ao caminho do ambiente virtual.
+- Arquivo PDF localizado em uma pasta incorreta durante os testes.
+
+## Soluções aplicadas
+- Ajustada a organização do ambiente virtual.
+- Revisada a estrutura do projeto.
+- Centralizada a pasta de uploads dentro do backend.
+- Validação da leitura realizada por meio de script de teste.
+
+## Aprendizados
+- Utilização da biblioteca PyMuPDF.
+- Leitura de documentos PDF em Python.
+- Organização por camadas (Routes e Services).
+- Importância da separação de responsabilidades.
+- Diferença entre testes rápidos e testes automatizados.
+- Revisão de arquitetura durante o desenvolvimento.
+
+## Resultado
+O AutoHire AI passou a ser capaz de extrair com sucesso o texto de currículos em formato PDF, preparando a base para a futura integração com Inteligência Artificial.
