@@ -101,6 +101,14 @@ if not exist backend\app\api\routes (
     mkdir backend\app\api\routes
 )
 
+if not exist backend\scripts (
+    mkdir backend\scripts
+)
+
+if not exist backend\uploads (
+    mkdir backend\uploads
+)
+
 :: =====================================================
 :: FRONTEND
 :: =====================================================
@@ -217,7 +225,7 @@ if not exist docs\documentacao\11-solucao-de-problemas.md (
     type nul > docs\documentacao\11-solucao-de-problemas.md
 )
 
-if not exist docs\documentacao\12-ambiente-de-desenvolvimento.md (
+if not exist docs\documentacao\12-guia-do-vscode.md (
     type nul > docs\documentacao\12-guia-do-vscode.md
 )
 
@@ -269,16 +277,28 @@ if not exist backend\app\services\pdf_service.py (
     type nul > backend\app\services\pdf_service.py
 )
 
-if not exist backend\uploads (
-    mkdir backend\uploads
+if not exist backend\app\services\extract_service.py (
+    type nul > backend\app\services\extract_service.py
+)
+
+if not exist backend\app\core\__init__.py (
+    type nul > backend\app\core\__init__.py
+)
+
+if not exist backend\app\database\__init__.py (
+    type nul > backend\app\database\__init__.py
+)
+
+if not exist backend\app\models\__init__.py (
+    type nul > backend\app\models\__init__.py
+)
+
+if not exist backend\app\utils\__init__.py (
+    type nul > backend\app\utils\__init__.py
 )
 
 if not exist backend\uploads\.gitkeep (
     type nul > backend\uploads\.gitkeep
-)
-
-if not exist backend\testar_pdf.py (
-    type nul > backend\testar_pdf.py
 )
 
 if not exist backend\tests\test_pdf.py (
@@ -289,12 +309,40 @@ if not exist backend\tests\test_upload.py (
     type nul > backend\tests\test_upload.py
 )
 
+if not exist backend\tests\test_extract.py (
+    type nul > backend\tests\test_extract.py
+)
+
+if not exist backend\tests\__init__.py (
+    type nul > backend\tests\__init__.py
+)
+
 if not exist backend\app\__init__.py (
     type nul > backend\app\__init__.py
 )
 
 if not exist backend\app\services\__init__.py (
     type nul > backend\app\services\__init__.py
+)
+
+if not exist backend\scripts\testar_extract.py (
+    type nul > backend\scripts\testar_extract.py
+)
+
+if not exist backend\scripts\testar_upload.py (
+    type nul > backend\scripts\testar_upload.py
+)
+
+if not exist backend\scripts\testar_pdf.py (
+    type nul > backend\scripts\testar_pdf.py
+)
+
+if not exist backend\scripts\__init__.py (
+    type nul > backend\scripts\__init__.py
+)
+
+if not exist backend\scripts\README.md (
+    type nul > backend\scripts\README.md
 )
 
 :: =====================================================
