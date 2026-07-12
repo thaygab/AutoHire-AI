@@ -1,4 +1,5 @@
 import re
+from app.services.knowledge_service import carregar_tecnologias
 
 def extrair_email(texto: str) -> str | None:
     """
@@ -123,6 +124,36 @@ def extrair_nome(texto: str) -> str | None:
 
     return melhor_nome
 
+def extrair_habilidades(texto: str) -> list:
+    """
+    Extrai as tecnologias encontradas no currículo.
+
+    Parâmetros:
+        texto (str): Texto extraído do currículo.
+
+    Retorno:
+        list: Lista de tecnologias encontradas.
+    """
+    tecnologias = carregar_tecnologias()
+
+    texto_minusculo = texto.lower()
+
+    habilidades = []
+
+    for tecnologia in tecnologias:
+
+        padrao = rf"\b{re.escape(tecnologia)}\b"
+
+        if re.search(
+            padrao,
+            texto,
+            re.IGNORECASE
+        ):
+
+            habilidades.append(tecnologia)
+
+    return habilidades
+
 def extrair_dados(texto: str) -> dict:
     """
     Extrai informações básicas do currículo.
@@ -133,5 +164,6 @@ def extrair_dados(texto: str) -> dict:
         "email": extrair_email(texto),
         "telefone": extrair_telefone(texto),
         "linkedin": extrair_linkedin(texto),
-        "github": extrair_github(texto)
+        "github": extrair_github(texto),
+        "habilidades": extrair_habilidades(texto)
     }
